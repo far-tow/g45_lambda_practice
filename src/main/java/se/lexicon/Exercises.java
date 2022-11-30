@@ -138,7 +138,7 @@ public class Exercises {
         10.	Using findAndDo() print out the firstName and lastName of everyone whose firstName is a palindrome.
      */
     public static void exercise10(String message) {
-        System.out.println(message);
+       System.out.println(message);
         Predicate<Person> namePalindrome = person -> new StringBuilder(person.getFirstName())
                 .reverse().toString().equalsIgnoreCase(person.getFirstName());
 
@@ -152,7 +152,6 @@ public class Exercises {
         11.	Using findAndSort() find everyone whose firstName starts with A sorted by birthdate.
      */
     public static void exercise11(String message) {
-        System.out.println(message);
         System.out.println(message);
         Predicate<Person> findCondition = p -> p.getFirstName()
                 .toLowerCase().startsWith("a");
